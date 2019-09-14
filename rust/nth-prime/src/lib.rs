@@ -17,5 +17,5 @@ pub fn nth(n: u32) -> u32 {
             break;
         }
     }
-    *primes.iter().nth(n as usize).unwrap()
+    *primes.get(n as usize).unwrap()
 }
